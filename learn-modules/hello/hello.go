@@ -27,4 +27,18 @@ func main() {
 		log.Fatal(error)
 	}
 	fmt.Println(msg)
+
+    fmt.Println("---------------")
+
+    names := []string{"A", "B", "C"}
+
+    greetings, error := greetings.Hellos(names)
+
+    if error != nil {
+    	log.Fatal(error)
+    }
+
+    fmt.Println(greetings)
+
+
 }
